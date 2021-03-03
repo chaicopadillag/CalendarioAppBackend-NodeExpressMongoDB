@@ -8,7 +8,7 @@ const generateJsonWebToken = (uid, nombre) => {
 			payload,
 			process.env.SECRET_JSON_WEB_TOKEN,
 			{
-				expiresIn: '2h',
+				expiresIn: '24h',
 			},
 			(err, token) => {
 				if (err) {

@@ -1,3 +1,5 @@
+# Calendario App Backend Node-Express-MongoDB
+
 ## Tecnologías usadas:
 
 - npm init -y
@@ -10,3 +12,4 @@
 - npm i bcryptjs
 - npm install jsonwebtoken
 - npm install cors
+  -npm i moment

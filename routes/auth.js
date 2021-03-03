@@ -8,7 +8,7 @@ const { check } = require('express-validator');
 
 const router = Router();
 
-const { crearUsuario, loginUsuario, revalidadToken } = require('../controllers/auth');
+const { crearUsuario, loginUsuario, revalidadToken } = require('../controllers/AuthController');
 const { validarCampos } = require('../middlewares/validarCampos');
 const { validarJsonWebToken } = require('../middlewares/validarJsonWebToken');
 
