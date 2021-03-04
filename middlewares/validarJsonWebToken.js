@@ -7,7 +7,7 @@ const validarJsonWebToken = (req, res = response, next) => {
 	if (!token) {
 		return res.status(401).json({
 			status: 401,
-			statustext: 'No hay Token en la petición',
+			statusText: 'No hay Token en la petición',
 		});
 	}
 	try {
@@ -19,12 +19,12 @@ const validarJsonWebToken = (req, res = response, next) => {
 
 		return res.status(401).json({
 			status: 401,
-			statustext: 'El Token de la petición no existe o es inválido',
+			statusText: 'El Token de la petición no existe o es inválido',
 		});
 	}
 	next();
-};
-
+}
+;
 module.exports = {
 	validarJsonWebToken,
 };
