@@ -90,8 +90,12 @@ const revalidadToken = async (req, res = response) => {
 	res.status(200).json({
 		status: 200,
 		statusText: 'Token gnerado correctamente',
-		token,
-	});
+		user:{
+			uid,
+			nombre,
+			token
+		}
+,	});
 };
 module.exports = {
 	crearUsuario,
